@@ -17,7 +17,8 @@
     yarn dev
     ```
 4) build local env:
-   - rename .env.example to .env 
+   
+   ``` rename .env.example to .env ``` 
    ```shell
     docker-compose up
     ```
@@ -31,13 +32,16 @@
     ```shell
       127.0.0.1 form-app.test
     ```
-6) int he root folder of the project rename .env.example to .env
-           
-7) ssh to container by running: 
+6) ssh to container by running: 
    ```shell
      docker exec -it form-app_app_1 bash
     ```
-8) inside the container migrate db:
+7) inside the container migrate db:
    ```shell
       php artisan migrate
    ```
+8) create ```database.sqlite``` file in database folder
+9) test app by running in the container: 
+    ```shell
+      vendor/bin/phpunit
+    ```
