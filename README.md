@@ -1,6 +1,6 @@
 ## Form App
 - Laravel app with react component to handle form.
-- all files are stored in storage/app folder.
+- all uploaded files are stored in storage/app folder.
 
 ### Install:
 1) Download the app by running:
