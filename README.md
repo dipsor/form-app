@@ -8,14 +8,17 @@
    ```shell
     composer install
     ```
-3) install frontend dependencies
+3) install frontend dependencies and build assets
    ```shell
     yarn
+    yarn dev
     ```
-4) run docker and then build containers by running:
+4) build local env:
+   - rename .env.example to .env 
    ```shell
     docker-compose up
     ```
+   **If database container fails during first build, stop the containers and run again** ```docker-compose up```
 5) change the host you will use to access this app
    ```shell
     sudo nano /etc/hosts 
