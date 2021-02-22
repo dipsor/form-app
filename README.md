@@ -1,4 +1,7 @@
 ## Form App
+- Laravel app with react component to handle form.
+- all files are stored in storage/app folder.
+
 ### Install:
 1) Download the app by running:
    ```shell
@@ -19,6 +22,7 @@
     docker-compose up
     ```
    **If database container fails during first build, stop the containers and run again** ```docker-compose up```
+   **or simply restart the database container**
 5) change the host you will use to access this app
    ```shell
     sudo nano /etc/hosts 
